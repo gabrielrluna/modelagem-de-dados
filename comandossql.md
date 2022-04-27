@@ -45,3 +45,12 @@ ALTER TABLE produtos
 
 #CONSTRAINT é uma restrição definida no relacionamento
 #A chave estrangeira deve fazer referência à chave primária 
+
+### Adicionar campo/coluna em uma tabela
+
+```sql
+ALTER TABLE produtos ADD fabricante_id INT NOT NULL AFTER preco;
+```
+
+add - Adiciona
+remove - remove
