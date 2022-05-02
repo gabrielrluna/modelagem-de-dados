@@ -65,4 +65,13 @@ SELECT preco, nome FROM produtos WHERE preco < 3000;
 ```sql
 SELECT * FROM produtos 
 WHERE preco >= 5000 AND preco < 8000;
+
+SELECT nome, preco FROM produtos
+-- Dos fabricantes Apple ou Microsoft
+WHERE fabriante_id = 3 OR fabriante_id = 8;
+
+
+SELECT nome, preco, quantidade FROM produtos
+WHERE NOT fabricante_id = 3
+
 ```
