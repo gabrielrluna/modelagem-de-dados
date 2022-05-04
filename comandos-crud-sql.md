@@ -75,3 +75,31 @@ SELECT nome, preco, quantidade FROM produtos
 WHERE NOT fabricante_id = 3
 
 ```
+
+### Filtros
+```sql
+SELECT nome, preco FROM produtos ORDER BY nome; -- ascendente
+SELECT nome, preco FROM produtos ORDER BY nome DESC; -- descendente
+```
+
+```sql
+SELECT nome, descricao FROM produtos;
+WHERE descricao LIKE '%processador%'; -- LIKE (COMO)
+-- % é um operador coringa. Significa "qualquer texto", ou melhor dizendo, pouco importa o texto
+```
+
+### Operacões e Funções de Agregação
+```sql
+SELECT SUM (preco) FROM produtos; -- Soma
+SELECT SUM (preco) AS "Quantidade em Estoque"; -- AS é um "Aliás" (Apelido)
+FROM produtos;
+```
+
+### Average - Média
+```sql
+SELECT AVG(preco) AS "Média dos Preços" FROM produtos;
+
+-- ROUND = Arredondamento 
+SELECT ROUND(AVG(preco),2) AS "Média dos Preços" FROM produtos;
+
+```
