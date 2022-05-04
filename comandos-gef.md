@@ -3,6 +3,41 @@
 INSERT INTO generos (genero) VALUES ('Terror'), ('Comédia'), ('Romance'), ('Documentário'), ('Ficção Científica'), ('Drama'), ('Ação'); 
 
 
-
-
+INSERT INTO filmes (titulo, lancamento, generos_id) VALUES
+('O Senhor dos Anéis: A Sociedade do Anel',
+2001,
+8),
+('O Senhor dos Anéis: As Duas Torres',
+2002,
+8),
+('O Senhor dos Anéis: O Retorno do Rei',
+2003,
+8),
+('Jurassik Park - O Mundo Perdido',
+1997,
+5),
+('Uma Linda Mulher',
+1990,
+3),
+('O Show de Truman',
+1998,
+2),
+('Forrest Gump',
+1994,
+1),
+('O Resgate do Soldado Ryan',
+1998,
+7),
+('A ponte do Rio Kwai',
+1957,
+7),
+('O Lobo de Wall Street',
+2012,
+2),
+('Prenda-me Se For Capaz',
+2002,
+7),
+('Guerra dos Mundos',
+2005,
+5),
 ```
