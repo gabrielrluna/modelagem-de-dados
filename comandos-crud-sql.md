@@ -108,4 +108,12 @@ SELECT COUNT(fabricante_id) AS "Quantidade de Fabricantes" FROM produtos;
 
 -- DISTINCT é um comando para evitar a duplicidade na contagem em campos que não são chave-primária
 SELECT COUNT(DISTINCT fabricante_id) AS "QTD de Fabricantes" FROM produtos;
+SELECT nome, preco, quantidade, (preco*quantidade) AS Total FROM produtos;
+```
+
+### Agrupamentos
+
+```sql
+SELECT fabricante_id, SUM(preco) AS total FROM produtos GROUP BY fabricante_id;
+-- GROUP BY = Segmenta o resultado da consulta. No caso, somei os preços e segmentei por cada fabricante.
 ```
